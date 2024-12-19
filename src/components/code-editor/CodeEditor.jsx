@@ -36,7 +36,7 @@ export const CodeEditor = () => {
                 />
 
             </div>
-            <Output />
+            <Output editorRef={editorRef} language={language}/>
         </div>
 
     )
