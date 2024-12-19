@@ -1,0 +1,14 @@
+.codeEditorContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.editorWrap {
+    /*width: 50%;*/
+}
+
+.editor {
+    border: 1px solid #333;
+    border-radius: 4px;
+}
