@@ -22,11 +22,13 @@ export const CodeEditor = () => {
 
     return (
         <div className={styles.codeEditorContainer}>
+            <h1 className={styles.title}>Simple code editor</h1>
+            <div className={styles.description}>Choose language, write your code and click "Run Code" button.</div>
             <div className={styles.editorWrap}>
                 <LanguageSelector language={language} onSelect={onSelect} />
                 <Editor
                     className={styles.editor}
-                    height="50vh"
+                    height="45vh"
                     theme="vs-dark"
                     defaultLanguage={language}
                     defaultValue={CODE_SNIPPETS[language]}

@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding: 5px;
     background: var(--darkThemeColor);
     color: var(--grey);
 }

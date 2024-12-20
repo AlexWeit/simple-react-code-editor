@@ -1,13 +1,62 @@
 .outputWrap {
-    flex: 1;
+    height: 25vh;
 }
 
 .output {
+    margin-top: 10px;
     height: 100%;
     border: 1px solid #333;
     border-radius: 4px;
+    padding: 5px 15px;
 }
 
 .error {
     color: red;
 }
+
+.buttonWrap {
+    display: flex;
+    gap: 5px;
+}
+
+.button {
+    height: 40px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--grey);
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.spinnerWrap {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    border-top-color: var(--grey);
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
